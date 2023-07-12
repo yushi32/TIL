@@ -32,3 +32,5 @@ end
 
 - status: :see_other<br/>
 [https://qiita.com/jnchito/items/5c41a7031404c313da1f#destroyのレスポンスに-status-see_other-を付ける必要がある]
+- locationヘッダー<br/>
+https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Location
