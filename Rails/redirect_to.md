@@ -30,6 +30,8 @@ end
 
 ### 参考文献
 
+- リダイレクトについて<br/>
+https://ichigick.com/rails-redirect-to/
 - status: :see_other<br/>
 [https://qiita.com/jnchito/items/5c41a7031404c313da1f#destroyのレスポンスに-status-see_other-を付ける必要がある]
 - locationヘッダー<br/>
