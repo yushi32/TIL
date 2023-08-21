@@ -48,6 +48,9 @@ gretel が提供するメソッドを使うことで、このパンくずリス�
 
   ```ruby
   <% breadcrumb :items %>
+
+  # 引数が必要な場合
+  <% breadcrumb :item, @item %>
   ```
   
   2. パンくずを表示したい場所に、`breadcrumbs`メソッドを記述する
