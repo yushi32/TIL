@@ -104,6 +104,8 @@ GitHub: https://github.com/ruby/rake
 
 RubyGems: https://rubygems.org/gems/rake
 
+IT用語辞典 Makeコマンド: https://e-words.jp/w/make%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89.html
+
 【Rails 】Rakeタスクとは: https://qiita.com/mmaumtjgj/items/8384b6a26c97965bf047
 
 【Rails】Rakeタスクの基本情報と作成・実行方法: https://autovice.jp/articles/177
