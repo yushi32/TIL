@@ -4,7 +4,7 @@
 
 - アプリケーションに対して送られたリクエストを、どのControllerのどのActionで処理するかを決める分配表のこと
 - RailsのルーターはパスやURLも生成してくれるので、ビューの
-- ルーティングは、`config/routes.rb`ファイルの上から順にマッチするか検索していくので、書く順番に注意すべき時がある
+- ルーティングは`config/routes.rb`ファイルの上から順にマッチするか検索していくので、書く順番に注意すべき時がある
 
 ### リソースベースルーティング
 
@@ -16,13 +16,13 @@
 
 ### リソースフルルーティング
 
-特徴
+**特徴**
 
 - コントローラごとに既定の7つのアクション（CRUD操作）に対するルーティングを自動で生成してくれる
 - 生成したルーティングに対するURLヘルパーも生成してくれる
 - URLヘルパーの引数に`:id`の代わりにオブジェクトを渡すことで、オブジェクトから`:id`を抽出してくれる
 
-種類
+**種類**
 
 - resourcesメソッド
 
@@ -35,7 +35,7 @@ idによる差分が必要なテーブルを扱う場合に用いる
 | HTTPメソッド | パス | コントローラ#アクション | pathヘルパー（Prefix） |
 | --- | --- | --- | --- |
 | GET | /posts | posts#index | posts_path |
-| GET | /posts/new | posts#new | new_posts_path |
+| GET | /posts/new | posts#new | new_post_path |
 | POST | /posts | posts#create | posts_path |
 | GET | /posts/:id | posts#show | post_path(:id) |
 | GET | /posts/:id/dit | posts#edit | edit_post_path(:id) |
