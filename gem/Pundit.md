@@ -108,3 +108,4 @@ end
 - [Github](https://github.com/varvet/pundit)
 - [[Rails]gem Punditによる権限管理 (認可)](https://zenn.dev/yusuke_docha/articles/7b4b2f3f1bb203)
 - [Punditをなるべくやさしく解説する](https://qiita.com/yutaro50/items/52484b7ae4ca87aa99a2)
+- [Gem Punditの基本的な使い方まとめ](https://otaku-programmer.com/gem/pundit/1/)
