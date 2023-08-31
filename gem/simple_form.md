@@ -15,7 +15,8 @@ $ rails generate simple_form:install
 Bootstrap や Zurb Foundation を適用させたい場合は、ジェネレーターの実行時にオプションをつける必要がある。
 
 ### 使い方
-`simple_form_for`で生成したフォームには、デフォルトでラベル、ヒント、エラー、入力そのものが含まれる。
+`simple_form_for`で生成したフォームには、デフォルトでラベル、ヒント、エラー、入力そのものが含まれる。<br/>
+`f.input`で生成される `input`タグの周りの`div`タグを取り除きたい場合は、`f.input_field`を使う。
 
 
 **実装例**
@@ -65,6 +66,7 @@ en:
 ```
 
 ### オプション
+`simple_form_for`で生成したフォームは、Rails の対応する入力タイプヘルパーと同じオプションを受け付ける。<br/>
 オプションは属性名の後ろにカンマ区切りで指定する。
 ```ruby
 <%= f.input :username, label: 'アカウント名' %>
@@ -96,6 +98,10 @@ hint: 'xx文字以上、XX文字以内'
 ```ruby
 include_blank: true    # 初期選択を空にする
 include_blank: 'その他' # 初期選択で文字列を指定する場合
+```
+- ラジオボタン
+```ruby
+as: :radio_buttons
 ```
 - ファイル送信フォームに変更
 ```ruby
