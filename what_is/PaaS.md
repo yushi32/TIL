@@ -33,3 +33,5 @@ PaaSはクラウドコンピューティングのうちの1つで、アプリケ
 ### 参考文献
 - [PaaSとは | クラウド・データセンター用語集](https://www.idcf.jp/words/paas.html)
 - [PaaSとは？メリット・デメリット、SaaSやIaaSとの違いを解説](https://www.utokyo-ipc.co.jp/column/paas/)
+- [SaaS,PaaS,IaaSとは？クラウドサービス定義の違いを
+比較し読み方や意味などを解説](https://www.itmanage.co.jp/column/saas-paas-iaas/)
