@@ -1,8 +1,8 @@
 ## IDaaSとは
 
 ### 概要
-IDaaSとは"Identity as a Service"の略称。「アイダース」と読む。
-アイデンティティ（Identity）の管理をSaaSやIaaSなどと同じくクラウドで管理するサービスを指す。<br/>
+IDaaSとは"Identity as a Service"の略称。「アイダース」と読む。<br/>
+アイデンティティ（Identity）の管理をSaaSやIaaSなどと同じくクラウドで管理するサービスを指す。
 
 簡単に言うと、一般的なWebアプリケーションで必要な認証まわりの機能（ユーザー管理・権限管理など）を提供してくれるクラウドサービス。
 
@@ -12,7 +12,6 @@ IDaaSとは"Identity as a Service"の略称。「アイダース」と読む。
 - Azure Active Directory(Microsoft)
 - Auth 0 (Auth 0)
 - Firebase Authentication(Firebase)
-...
 
 ### IDaaSを利用するメリット
 - ユーザー認証に外部サービスのアカウントを利用できる（IDフェデレーション）
