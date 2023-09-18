@@ -10,6 +10,17 @@ IaaSでは、自社でサーバーなどのハードウェアをもたずに、�
 
 <br/>
 
+### クラウドサービス定義の違い
+|領域|SaaS|IaaS|PaaS|
+|--|--|--|--|
+|アプリケーション|○|×|×|
+|ミドルウェア|○|○|×|
+|OS|○|○|○|
+|サーバー|○|○|○|
+|ネットワーク|○|○|○|
+
+<br/>
+
 ### 代表的なサービス
 - Amazon Web Services （AWS）
 - Google Cloud Platform (GCP)
@@ -41,4 +52,6 @@ PaaSはインフラ設備に加えて、OSやミドルウェアまでをセッ�
 
 ### 参考文献
 - [IaaSとは | クラウド・データセンター用語集 - IDCフロンティア](https://www.idcf.jp/words/iaas.html)
-- [IaaS、PaaS、SaaSの違いを整理して、クラウドサービスの特徴を知ろう](https://pfs.nifcloud.com/navi/beginner/iaas.html)
+- [IaaS、PaaS、SaaSの違いを整理して、クラウドサービスの特徴を知ろう](https://pfs.nifcloud.com/navi/beginner/iaas.htm)
+- [SaaS,PaaS,IaaSとは？クラウドサービス定義の違いを
+比較し読み方や意味などを解説](https://www.itmanage.co.jp/column/saas-paas-iaas/)
