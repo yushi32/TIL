@@ -7,7 +7,7 @@ SPAとは、"Single Page Application"の略称。<br/>
 - Ajax通信で非同期に必要なデータだけを受け取りコンテンツを更新する
 - JavaScriptによってURLを操作できる（Histroy API）ので、URLの変更をイベントとして検知し画面を書き換えることも可能
 - Vue.js や React を用いてビュー部分のデータ（JSON）をブラウザに渡し、サーバーサイドではAPIのみを提供しページの構築を行う
-- JavaScriptによってURLを操作できるので、URLの変更をイベントとして検知し画面を書き換えることも可能
+- JavaScriptによってURLを操作できるので、URLの変更をイベントとして検知し画面を書き換えることも可能 
 <br/>
 
 ### メリット
