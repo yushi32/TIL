@@ -35,3 +35,4 @@ GraphQLではこれを改善し、必要なデータだけをリクエストす�
 - [これを読めばGraphQL全体がわかる。GraphQLサーバからDB、フロントエンド構築](https://reffect.co.jp/html/graphql/)
 - [GraphQLとRESTの比較─知っておきたい両者の違い](https://kinsta.com/jp/blog/graphql-vs-rest/)
 - [GraphQLとは何でしょうか。](https://hasura.io/learn/ja/graphql/intro-graphql/what-is-graphql/)
+- [Restful API、GraphQL…フロントエンドとバックエンドをつなげる方法](https://www.hexabase.com/column/restful-api-graphql-connect-frontend-backend/)
