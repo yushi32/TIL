@@ -11,7 +11,7 @@ IDaaSとは"Identity as a Service"の略称。「アイダース」と読む。<
 - Google Cloud Identity(Google)
 - Azure Active Directory(Microsoft)
 - Auth 0 (Auth 0)
-- Firebase Authentication(Firebase)
+- Firebase Authentication(Firebase) 
 
 ### IDaaSを利用するメリット
 - ユーザー認証に外部サービスのアカウントを利用できる（IDフェデレーション）
