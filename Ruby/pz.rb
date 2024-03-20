@@ -8,6 +8,19 @@ input_line = gets.chomp
 # 引数に区切り文字を渡す
 array = str.split(' ')
 
+# 文字列の切り取り => slice, slice!
+# 指定した箇所または範囲の文字列を切り取った新しい文字列を作成する
+# slice!メソッドを使うと、元の文字列から切り取った文字列が削除される（破壊的メソッド）
+str = 'world'
+str.slice(3) #=> 'l'
+str.slice(0, 2) #=> 'wor'
+str.slice(0..2) #=> 'wor'
+str #=> 'world'
+
+str.slice!(0..2) #=> 'wor'
+str #=> 'ld'
+
+
 # 配列に対して同じ処理を繰り返す => map
 array.map { |arr| puts arr } 
 # 繰り返し処理がメソッド呼び出しの場合、簡略化して記述できる
