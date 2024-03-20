@@ -1,6 +1,9 @@
 # 一行の入力を受け取る => gets
 input_line = gets
 
+# 末尾の改行コードを削除する => chomp
+input_line = gets.chomp
+
 # 文字列を配列に分割する => split
 # 引数に区切り文字を渡す
 array = str.split(' ')
