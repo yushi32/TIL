@@ -48,10 +48,10 @@ float.floor #=> 12, 戻り値はInteger
 float.floor(2) #=> 12.34
 
 
-# 配列に対して同じ処理を繰り返す => map
-array.map { |arr| puts arr } 
+# 配列に対して同じ処理を繰り返した結果を新しい配列として返す => map
+new_array = array.map { |arr| puts arr * 2 } 
 # 繰り返し処理がメソッド呼び出しの場合、簡略化して記述できる
-array.map(&:to_i)
+new_array = array.map(&:to_i)
 
 ## 配列操作に関するメソッド
 #  以下のメソッドはレシーバの配列そのものを変更する（破壊的メソッド）
