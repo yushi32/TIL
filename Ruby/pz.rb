@@ -7,6 +7,8 @@ input_line = gets.chomp
 # 文字列を配列に分割する => split
 # 引数に区切り文字を渡す
 array = str.split(' ')
+# 連続する文字列を1文字ずつ配列に入れる
+array = str.chars
 
 # 文字列の切り取り => slice, slice!
 # 指定した箇所または範囲の文字列を切り取った新しい文字列を作成する
