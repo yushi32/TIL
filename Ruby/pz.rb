@@ -52,6 +52,11 @@ float.floor #=> 12, 戻り値はInteger
 float.floor(2) #=> 12.34
 
 
+# 配列の初期化
+Array.new(3, 0) #=> [0, 0, 0]
+# 二次元配列の初期化
+Array.new(2) { Array.new(3, 0) } #=> [[0, 0, 0], [0, 0, 0]]
+
 # 配列に対して同じ処理を繰り返した結果を新しい配列として返す => map
 new_array = array.map { |arr| puts arr * 2 } 
 # 繰り返し処理がメソッド呼び出しの場合、簡略化して記述できる
