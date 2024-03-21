@@ -21,6 +21,12 @@ str.slice!(0..2) #=> 'wor'
 str #=> 'ld'
 
 
+# 数値の大小を比較する
+a = 3
+b = 7
+[a, b].max #=> 7
+[a, b].min #=> 3
+
 # 文字列、数値を浮動小数点数に変換する => to_f
 str.to_f
 int.to_f
