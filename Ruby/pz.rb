@@ -21,6 +21,25 @@ str.slice!(0..2) #=> 'wor'
 str #=> 'ld'
 
 
+# 文字列、数値を浮動小数点数に変換する => to_f
+str.to_f
+int.to_f
+
+## 小数に対する操作
+float = 12.345
+#  四捨五入 => round
+float.round #=> 12, 戻り値はInteger
+float.round(2) #=> 12.35
+
+#  切り上げ => ceil
+float.ceil #=> 13, 戻り値はInteger
+float.ceil(2) #=> 12.35
+
+# 切り捨て => floor
+float.floor #=> 12, 戻り値はInteger
+float.floor(2) #=> 12.34
+
+
 # 配列に対して同じ処理を繰り返す => map
 array.map { |arr| puts arr } 
 # 繰り返し処理がメソッド呼び出しの場合、簡略化して記述できる
