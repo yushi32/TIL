@@ -67,6 +67,11 @@ new_array = array.map { |arr| puts arr * 2 }
 # 繰り返し処理がメソッド呼び出しの場合、簡略化して記述できる
 new_array = array.map(&:to_i)
 
+# 配列から条件に一致する要素を削除した新しい配列を返す => reject
+# reject!メソッドは、レシーバの配列そのものを変更する
+new_array = array.reject { |arr| (arr % 2) == 0 } # 奇数だけの新しい配列を返す
+array.reject! { |arr| (arr % 2) == 0 } # 元の配列から偶数の要素だけを削除する
+
 ## 配列操作に関するメソッド
 #  以下のメソッドはレシーバの配列そのものを変更する（破壊的メソッド）
 #  配列の先頭に要素を追加する => unshift
