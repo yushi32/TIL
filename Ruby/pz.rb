@@ -86,6 +86,13 @@ array.shift
 # 　配列の末尾の要素を削除する => pop
 array.pop
 
+# 指定した要素のインデックス番号を取得する => index, rindex
+array = [3, 1, 4, 2, 1, 5]
+# 最初に現れる位置
+array.index（1） #=> 1
+# 最後に現れる位置
+array.rindex(1) #=> 4
+
 # 二次元配列を一次元配列にした新しい配列を返す => flatten
 array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 new_array = array.flatten
