@@ -82,3 +82,7 @@ array.push
 array.shift
 # 　配列の末尾の要素を削除する => pop
 array.pop
+
+# 二次元配列を一次元配列にした新しい配列を返す => flatten
+array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+new_array = array.flatten
