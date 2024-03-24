@@ -89,3 +89,9 @@ array.pop
 # 二次元配列を一次元配列にした新しい配列を返す => flatten
 array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 new_array = array.flatten
+
+# ハッシュの初期化
+new_hash = Hash.new { |hash, key| hash[key] = '初期値' }
+# ブロックを渡すことで、指定したキーがなかった時に初期値を設定することが出来る
+# ブロック変数hashはnew_hash自体を指している
+# 例えばnew_hash[5]を参照して存在しなかった場合、「keyが5でvalueが'初期値'」の要素が作成される
