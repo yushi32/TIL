@@ -70,6 +70,12 @@ new_array = array.map { |arr| puts arr * 2 }
 # 繰り返し処理がメソッド呼び出しの場合、簡略化して記述できる
 new_array = array.map(&:to_i)
 
+# 配列から条件に一致する要素だけからなる新しい配列を返す => select
+# select!メソッドは、レシーバの配列そのものを変更する
+array = [1, 2, 3, 4, 5, 6]
+new_array = array.select { |arr| arr.even? } # 偶数だけの新しい配列を返す
+array.select! { |arr| arr.even? } # 元の配列から奇数の要素だけを削除する
+
 # 配列から条件に一致する要素を削除した新しい配列を返す => reject
 # reject!メソッドは、レシーバの配列そのものを変更する
 new_array = array.reject { |arr| (arr % 2) == 0 } # 奇数だけの新しい配列を返す
