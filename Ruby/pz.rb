@@ -38,6 +38,17 @@ b = 7
 -123.abs #=> 123
 (3 - 7).abs #=> 4
 
+## 特定の数値範囲で繰り返し処理を行う => upto, downto
+#  昇順
+3.upto(7) do |i|
+  puts i #=> 3, 4, 5, 6, 7
+end
+
+#  降順
+7.downto(3) do |i|
+  puts i #=> 7, 6, 5, 4, 3
+end
+
 # 文字列、数値を浮動小数点数に変換する => to_f
 str.to_f
 int.to_f
