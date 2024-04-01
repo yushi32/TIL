@@ -102,6 +102,10 @@ array.push
 array.shift
 # 　配列の末尾の要素を削除する => pop
 array.pop
+# 指定した位置に要素を挿入する => insert
+array = [1, 3, 7, 9]
+array.insert(2, 5)
+p array #=> [1, 3, 5, 7, 9]
 
 # 指定した要素のインデックス番号を取得する => index, rindex
 array = [3, 1, 4, 2, 1, 5]
