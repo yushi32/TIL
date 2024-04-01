@@ -110,6 +110,12 @@ array.index（1） #=> 1
 # 最後に現れる位置
 array.rindex(1) #=> 4
 
+# ブロックの条件式に対して初めてtrueを返した要素の位置を返す => bsearch
+# レシーバの配列はあらかじめソートされている必要がある、二分探索で検索するので効率が良い、trueを返す要素がなければnilを返す
+array = [1, 3, 5, 7, 13, 16]
+array.bsearch { |n| n >= 9 } #=> 4
+array.bsearch { |n| n >= 20 } #=> nil
+
 # 二次元配列を一次元配列にした新しい配列を返す => flatten
 array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 new_array = array.flatten
