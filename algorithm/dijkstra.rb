@@ -12,6 +12,9 @@ dy = [0, 1, 0, -1]
 dist = Array.new(h) { Array.new(w, Float::INFINITY) }
 dist[sy][sx] = 0
 
+# 確定した頂点を管理する配列
+fixed = Array.new(h) { Array.new(w, false) }
+
 queue = [[sx, sy, 0]]
 
 # 優先度付きキューを表現するために、キューの順序がコスト順になるようにする
@@ -23,9 +26,11 @@ end
 
 while !queue.empty?
     x, y, d = queue.shift
-    # d: キューに追加した時点での最短距離
-    # 後の処理でもう一度同じ頂点への最短距離が計算され更新されている可能性がある
-    next if d > dist[y][x]
+    # d: 頂点(x, y)までの最短距離
+    # 未確定の頂点のうち距離が最も短い頂点をqueueから取り出して最短距離を確定させる
+    # 後の処理で確定済みの頂点に訪問した場合はスキップする
+    next if fixed[y][x]
+    fixed[y][x] = true
     
     4.times do |i|
         nx = x + dx[i]
