@@ -27,6 +27,10 @@ str #=> 'world'
 str.slice!(0..2) #=> 'wor'
 str #=> 'ld'
 
+# 一致した文字列をすべて置き換える => gsub, gsub!
+str = 'hello, world!'
+puts str.gsub('l', 'x') #=> 'hexxo, worxd!'
+
 
 # 数値の大小を比較する
 a = 3
