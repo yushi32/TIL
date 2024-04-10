@@ -134,6 +134,10 @@ array.bsearch { |n| n >= 20 } #=> nil
 array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 new_array = array.flatten
 
+# 配列に含まれる要素を数え上げた結果をハッシュで返す => tally
+array = ['a', 'b', 'c', 'b']
+hash = array.tally #=> {"a"=>1, "b"=>2, "c"=>1}
+
 # ハッシュの初期化
 new_hash = Hash.new { |hash, key| hash[key] = '初期値' }
 # ブロックを渡すことで、指定したキーがなかった時に初期値を設定することが出来る
