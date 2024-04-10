@@ -10,6 +10,12 @@ array = str.split(' ')
 # 連続する文字列を1文字ずつ配列に入れる
 array = str.chars
 
+# 文字列同士を結合する => <<, concat
+# レシーバを破壊的に変更する、+演算子は毎回新しくオブジェクトを作るため、効率が悪い
+str = 'abc'
+str << 'def' #=> 'abcdef'
+str.concat('def') #=> 'abcdef'
+
 # 配列を結合して文字列を生成する
 array = ['a', 'b', 'c']
 array.join #=> '123'
