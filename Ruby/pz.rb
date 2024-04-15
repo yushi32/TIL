@@ -86,6 +86,12 @@ Array.new(2) { Array.new(3, 0) } #=> [[0, 0, 0], [0, 0, 0]]
 # xからyまでの数値の配列を作成する => to_a
 array = (1..5).to_a #=> [1, 2, 3, 4, 5]
 
+# 配列から重複ありで隣り合う要素をn個ずつ取り出す => each_cons
+array = [2, 3, 6, 4, 1, 5]
+array.each_cons(3) do |a, b, c|
+  puts a + b + c #=> 11, 13, 11, 10
+end
+
 # 配列に対して同じ処理を繰り返した結果を新しい配列として返す => map
 new_array = array.map { |arr| puts arr * 2 } 
 # 繰り返し処理がメソッド呼び出しの場合、簡略化して記述できる
