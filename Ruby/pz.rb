@@ -109,6 +109,10 @@ array.select! { |arr| arr.odd? } # 元の配列から偶数の要素だけを削
 new_array = array.reject { |arr| arr.even? } # 奇数だけの新しい配列を返す
 array.reject! { |arr| arr.even? } # 元の配列から偶数の要素だけを削除する
 
+# 配列の各要素に対してブロックを評価し、すべての結果が真だった場合にtrueを返す => all?
+array = [1, -3, 7]
+array.all? { |n| n > 0 } #=> false
+
 ## 配列操作に関するメソッド
 #  以下のメソッドはレシーバの配列そのものを変更する（破壊的メソッド）
 #  配列の先頭に要素を追加する => unshift
