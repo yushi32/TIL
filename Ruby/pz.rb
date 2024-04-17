@@ -87,6 +87,13 @@ Array.new(2) { Array.new(3, 0) } #=> [[0, 0, 0], [0, 0, 0]]
 # xからyまでの数値の配列を作成する => to_a
 array = (1..5).to_a #=> [1, 2, 3, 4, 5]
 
+# 配列の要素をすべて掛け合わせる => inject
+# injectメソッドは、ブロックに従ってレシーバの各要素を計算するメソッド
+# ブロック変数resultの初期値を渡したい場合は引数が必要、引数がない場合は先頭の要素がresult・2番目以降の要素がitemに渡る
+array = [2, 3, 4, 5]
+puts array.inject(:*) #=> 120
+puts array.inject(1) { |result, item| result + item } #=> 15
+
 # 配列から重複ありで隣り合う要素をn個ずつ取り出す => each_cons
 array = [2, 3, 6, 4, 1, 5]
 array.each_cons(3) do |a, b, c|
